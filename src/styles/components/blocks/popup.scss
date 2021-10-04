@@ -1,0 +1,98 @@
+.popup {
+  width: 384px;
+  position: relative;
+
+  &__wrapp {
+    padding: 40px 52px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    width: 384px;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__form {
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+
+    input,
+    .btn {
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    .checkbox label {
+      text-align: left;
+    }
+
+    .btn--social {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__edit-image {
+    & img {
+      width: 280px;
+      height: 280px;
+      margin-bottom: 35px;
+    }
+
+    & button.btn {
+      width: auto;
+    }
+  }
+
+  &__edit-password {
+
+    & input {
+      margin: 15px 0 16px;
+    }
+
+    & input:first-child {
+      margin: 0 0 15px;
+    }
+
+    & hr {
+      height: 2px;
+      border: none;
+      background-color: $primary-40;
+    }
+  }
+
+  &__close {
+    text-align: center;
+    margin-top: 40px;
+
+    .btn {
+      opacity: 0.5;
+      transition: 0.2s opacity ease-in;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__ok {
+    // position: absolute;
+    opacity: 0.5;
+    color: $primary-60;
+    width: 72px;
+    height: 72px;
+    margin-bottom: -39px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

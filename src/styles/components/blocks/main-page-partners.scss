@@ -1,0 +1,134 @@
+.main-page-partners-link {
+  background-color: $primary-40;
+  height: 560px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    height: 480px;
+  }
+
+  @media (max-width: $view-laptop) {
+    height: 580px;
+    padding-right: 30px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    left: -200%;
+    top: 0;
+    background-color: $primary-40;
+  }
+
+  @media (max-width: $view-tablet) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 353px;
+    padding: 0;
+    background-color: transparent;
+
+    &::before {
+      height: 110%;
+      width: 120%;
+      left: -10%;
+      top: -30px;
+      border-bottom-right-radius: 1000px;
+      border-bottom-left-radius: 1000px;
+      z-index: 0;
+    }
+  }
+
+  &__desc {
+    max-width: 385px;
+    margin-top: 150px;
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+      margin-top: 110px;
+    }
+
+    @media (max-width: $view-laptop) {
+      margin-top: 155px;
+      width: 91.305%;
+    }
+
+    @media (max-width: $view-tablet) {
+      margin-top: 0;
+      text-align: center;
+      width: 100%;
+      max-width: 89.62%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+
+      @media (max-width: 1024px) {
+        font-size: 32px;
+        line-height: normal;
+        margin-bottom: 16px;
+      }
+
+      @media (max-width: $view-tablet) {
+        font-size: 40px;
+        margin-top: 44px;
+      }
+    }
+
+    .btn {
+      margin-top: 25px;
+
+      @media (max-width: $view-tablet) {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.main-page-partners-info {
+
+  &__item {
+    width: 252px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1024px) {
+      width: 85%;
+      margin-bottom: 24px;
+      margin-left: auto;
+    }
+
+    @media (max-width: $view-laptop) {
+      width: 91%;
+    }
+
+    @media (max-width: $view-tablet) {
+      width: 87.432%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    svg {
+      width: 72px;
+      height: 72px;
+      color: var(--color-primary);
+    }
+
+    & > p:first-of-type {
+      margin-bottom: 8px;
+    }
+  }
+}

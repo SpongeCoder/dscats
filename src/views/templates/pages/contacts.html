@@ -1,0 +1,48 @@
+{{> header title="Контакты"}}
+{{> blocks/head modstyle='head--white'}}
+<div class="content content--black">
+  <div class="main-wrapp">
+    <div class="contacts-page">
+      <div class="contacts-page__item">
+        <div class="contacts-page__img">
+          <img
+            srcset="
+              {{indexDir}}/assets/img/content/contacts-1.jpg 1200w,
+              {{indexDir}}/assets/img/content/contacts-1-900.jpg 900w,
+              {{indexDir}}/assets/img/content/contacts-1-600.jpg 600w,
+            "
+            src="{{indexDir}}/assets/img/content/contacts-1.jpg"
+            alt="contacts"
+          >
+        </div>
+        <div class="contacts-page__desc">
+          <h2>Контакты</h2>
+          <p><span>Фактический адрес</span>: Obcaecati eveniet alias enim fuga. Esse, ex similique!</p>
+          <p><span>Электронная почта</span>: mail@sitename.ru</p>
+          <p><span>Телефон</span>: +7 (999) 999-99-99</p>
+        </div>
+      </div>
+      <div class="contacts-page__item">
+        <div class="contacts-page__img">
+          <img
+            srcset="
+              {{indexDir}}/assets/img/content/contacts-2.jpg 900w,
+              {{indexDir}}/assets/img/content/contacts-2-600.jpg 600w,
+            "
+            src="{{indexDir}}/assets/img/content/contacts-2.jpg"
+            alt="contacts"
+          >
+        </div>
+        <div class="contacts-page__desc">
+          <h2>Реквизиты</h2>
+          <p>Общество с ограниченной ответственностью "Company Name"</p>
+          <p><span>Юридический адрес</span>: Obcaecati eveniet alias enim fuga. Esse, ex similique! </p>
+          <p><span>ИНН/КПП</span>: 999999999 / 00000000000</p>
+          <p><span>Тел</span>: +7 (999) 999-99-99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> blocks/b-feedback modStyle="b-feedback--center-mobile"}}
+</div>
+{{> footer }}

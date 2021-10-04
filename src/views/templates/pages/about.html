@@ -1,0 +1,38 @@
+{{> header title="О нас"}}
+{{> blocks/head }}
+<div class="content content--gray">
+  <div class="main-wrapp">
+    <div class="about-page">
+      <div class="about-page__item">
+        <div class="about-page__img">
+          <div class="about-page__bg-rounded">
+            {{> svg-icon name="rounded-icon"}}
+          </div>
+          {{> svg-icon name="logo"}}
+        </div>
+        <div class="about-page__desc">
+          <h2>О нас</h2>
+          <p>SITENAME - Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации систем массового участия. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации систем массового участия.</p>
+        </div>
+      </div>
+      <div class="about-page__item">
+        <div class="about-page__desc">
+          <p>Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации систем массового участия.</p>
+        </div>
+        <div class="about-page__img">
+          <img
+            srcset="
+              {{indexDir}}/assets/img/content/contacts-1.jpg 1200w,
+              {{indexDir}}/assets/img/content/contacts-1-900.jpg 900w,
+              {{indexDir}}/assets/img/content/contacts-1-600.jpg 600w,
+            "
+            src="{{indexDir}}/assets/img/content/contacts-1.jpg"
+            alt="contacts"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> blocks/b-feedback modStyle="b-feedback--dark"}}
+</div>
+{{> footer }}

@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #12b886;
+}
+
+//========== COLORS ===========//
+$orange: #ff6900;
+$blue: #2b61d2;
+$green: #64be2f;
+$pink: #ff1575;
+$purple: #8840a7;
+$sea: #00c1ff;
+$mint: #52bfac;
+$yellow: #ffbd00;
+$white: #ffffff;
+
+//========== SHAPE COLORS ===========//
+$primary-red: #e03131;
+$primary-black: #212529;
+$primary-100: #3c4959;
+$primary-80: #667382;
+$primary-60: #bdc6d2;
+$primary-40: #f0f4f9;
+$primary-color: var(--color-primary);
+
+//========== TEXT COLORS ===========//
+$text-color-33: #333;
+$text-color-66: #666;
+$text-color-99: #999;
+$text-color-de: #dedede;
+$text-color-fa: #fafafa;
+
+//========== SOCIAL COLORS ===========//
+$social-color-apple: #2e3033;
+$social-color-google: #ff3e30;
+$social-color-vk: #4c75a3;
+
+/* ============ OTHERS =============== */
+$head-height: 80px;
+
+$view-desktop: 1360px;
+$view-laptop: 1023px;
+$view-tablet: 767px;
+$view-mobile: 425px;
+
+/* ============ border-radius =============== */
+$border-radius-big: 24px;
+$border-radius-small: 8px;

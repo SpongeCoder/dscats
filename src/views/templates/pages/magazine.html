@@ -1,0 +1,46 @@
+{{> header title="Журнал"}}
+{{> blocks/head }}
+<div class="content">
+  <div class="main-wrapp">
+    <div class="magazine-page">
+      <h1>Журнал</h1>
+      {{> blocks/quote-block}}
+
+      <div class="magazine-page__filter">
+        <b>22 статьи</b>
+
+        <div class="select select--no-border">
+          <input type="hidden" name="select-name2" value="">
+          <div class="select__value">
+            <span>Сначала дешевле</span>
+            {{> svg-icon name="filter"}}
+          </div>
+          <div class="select__list">
+            <ul>
+              <li data-val="Скидки">Сначала дешевле</li>
+              <li data-val="Скидки">Сначала дороже</li>
+              <li data-val="Скидки">По популярности</li>
+              <li data-val="Скидки">Скидки</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="magazine-page__wrapp">
+        {{> blocks/magazine-page-item }}
+        {{> blocks/magazine-page-item modStyle="magazine-page-item--img" imgName="photo"}}
+        {{> blocks/magazine-page-item modStyle="magazine-page-item--img" imgName="magazine-photo"}}
+        {{> blocks/magazine-page-item }}
+        {{> blocks/magazine-page-item modStyle="magazine-page-item--img" imgName="photo"}}
+        {{> blocks/magazine-page-item }}
+        {{> blocks/magazine-page-item }}
+        {{> blocks/magazine-page-item }}
+        {{> blocks/magazine-page-item modStyle="magazine-page-item--img" imgName="magazine-photo"}}
+        {{> blocks/magazine-page-item modStyle="magazine-page-item--img" imgName="photo"}}
+      </div>
+
+    </div>
+  </div>
+  {{> blocks/b-subscribe }}
+</div>
+{{> footer }}

@@ -1,0 +1,43 @@
+{{> header title="UI Page"}}
+{{> blocks/head }}
+<div class="content">
+  <div class="main-wrapp" >
+    {{> UI/buttons}}
+
+    <div style="margin: 20px 0">
+      <h3>Selectors</h3>
+      {{> UI/select defaultName="Select" listItem=ui.filter.otherList }}
+      {{> UI/select defaultName="Открытый Select" listItem=ui.filter.otherList modStyle="is-open" }}
+      {{> UI/select defaultName="disable Select" listItem=ui.filter.otherList modStyle="disable" }}
+      {{> UI/select defaultName="Сортировка" listItem=ui.filter.otherList modStyle="select--no-border" iconName="filter" }}
+    </div>
+
+    <hr>
+
+    <div style="margin: 20px 0">
+      <h3>Inputs</h3>
+      <div style="margin: 10px 0">
+        <input type="text" placeholder="placeholder">
+      </div>
+
+      <div style="margin: 10px 0">
+        <input type="text" placeholder="placeholder" value="Москва">
+      </div>
+
+      <div style="margin: 10px 0">
+        <input type="text" placeholder="placeholder" disabled value="Москва disabled">
+      </div>
+
+      <div style="margin: 10px 0">
+        <input type="text" placeholder="placeholder" class="is-error" value="Моск error">
+      </div>
+    </div>
+
+    <div class="bgc-60" style="padding: 20px">
+      {{#> UI/checkbox idName="checkboxtestui1" }}{{/UI/checkbox}}
+      {{> blocks/checkbox-policy checkboxId="example1"}}
+    </div>
+
+  </div>
+</div>
+{{> footer }}

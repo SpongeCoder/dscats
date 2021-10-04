@@ -1,0 +1,25 @@
+<a href="#" class="magazine-page-item {{modStyle}}">
+  {{#if imgName}}
+    <div class="magazine-page-item__bg-img">
+      <img
+        srcset="
+          {{indexDir}}/assets/img/content/{{imgName}}.jpg 1600w,
+          {{indexDir}}/assets/img/content/{{imgName}}-1200.jpg 1200w,
+          {{indexDir}}/assets/img/content/{{imgName}}-900.jpg 900w,
+          {{indexDir}}/assets/img/content/{{imgName}}-600.jpg 600w,
+        "
+        src="{{indexDir}}/assets/img/content/{{imgName}}.jpg"
+        alt="title"
+      >
+    </div>
+  {{/if}}
+  <h3 class="magazine-page-item__title">Выбор значения</h3>
+  <p class="magazine-page-item__desc">Кстати, сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения.</p>
+  <p class="magazine-page-item__view-count">
+    {{> svg-icon name="eye-icon"}}
+    <span>125</span>
+  </p>
+  <div class="magazine-page-item__read">
+    <div class="btn btn--black">Читать</div>
+  </div>
+</a>

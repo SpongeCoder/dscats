@@ -1,0 +1,79 @@
+{{> header title="Модальные окна"}}
+{{> blocks/head }}
+<div class="content">
+  <div class="">
+
+    <div style="display: flex; justify-content: space-around; align-items: flex-start;">
+      <div class="popup">
+        <div class="popup__wrapp">
+          <div class="popup__content">
+            <h2>Оставить заявку</h2>
+            <p>Авторизуйтесь, чтобы войти в личный кабинет</p>
+
+            <form action="post" class="popup__form">
+              <input type="text" required placeholder="Ваше имя" value="">
+              <input type="tel" required placeholder="Ваш телефон" value="">
+              <input type="text" placeholder="Комментарий" value="">
+
+              <button class="btn btn--primary">Отправить код</button>
+
+              {{> blocks/checkbox-policy checkboxId="popup-checkbox-auth-polit-label"}}
+            </form>
+          </div>
+        </div>
+
+        <div class="popup__close">
+          <button class="btn btn--close">
+            {{> svg-icon name="close-icon"}}
+          </button>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__wrapp">
+          <div class="popup__content">
+            <h2>Вход</h2>
+            <p>Авторизуйтесь, чтобы войти в личный кабинет</p>
+            <form action="" class="popup__form">
+              <input type="text" placeholder="Введите телефон или email">
+
+              <p><span class="text-mini">или</span></p>
+
+              <div>
+                {{> blocks/buttons-social }}
+              </div>
+
+              {{> blocks/checkbox-policy checkboxId="popup-checkbox-auth-polit-label-1"}}
+            </form>
+          </div>
+        </div>
+
+        <div class="popup__close">
+          <button class="btn btn--close">
+            {{> svg-icon name="close-icon"}}
+          </button>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__wrapp">
+          <div class="popup__ok">
+            {{> svg-icon name="check-rounded"}}
+          </div>
+          <div class="popup__content">
+            <h2>Спасибо!</h2>
+            <p>Авторизуйтесь, чтобы войти в личный кабинет</p>
+          </div>
+        </div>
+
+        <div class="popup__close">
+          <button class="btn btn--close">
+            {{> svg-icon name="close-icon"}}
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{> footer }}

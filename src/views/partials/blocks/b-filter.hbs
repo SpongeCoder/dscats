@@ -1,0 +1,41 @@
+<div class="b-filter {{modStyle}}">
+  <div class="b-filter-tabs">
+    <button class="is-active">Все</button>
+    <button>Спорт</button>
+    <button>Ивенты</button>
+    <button>Музыка</button>
+  </div>
+
+  {{#unless isMainPage}}
+    <div class="b-filter-close-btn">
+      <button class="btn btn--close btn--black">
+        {{> svg-icon name="close-icon"}}
+      </button>
+    </div>
+  {{/unless}}
+
+  <div class="b-filter__wrapp">
+    {{#unless isMainPage}}
+      <div class="b-filter__title">Фильтры</div>
+    {{/unless}}
+
+    <div class="b-filter-inputs">
+      {{> UI/select defaultName="Город" listItem=ui.filter.cityList }}
+      {{> UI/select defaultName="Тип значения" listItem=ui.filter.otherList }}
+
+      <input type="text" placeholder="Адрес">
+
+      {{#unless isMainPage}}
+        {{> UI/select defaultName="Город 2" listItem=ui.filter.otherList }}
+        {{> UI/select defaultName="Парковка" listItem=ui.filter.otherList }}
+        {{> UI/select defaultName="Цена" isPrice=true modStyle="select--price" }}
+      {{/unless}}
+    </div>
+
+    <div class="b-filter-btns">
+      <button class="btn btn--100">Сбросить фильтры</button>
+      <button class="btn btn--primary">Найти</button>
+    </div>
+  </div>
+
+</div>

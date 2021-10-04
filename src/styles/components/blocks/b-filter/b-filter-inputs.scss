@@ -1,0 +1,27 @@
+.b-filter-inputs {
+  display: grid;
+  grid-template-columns: 160px 168px auto 160px 160px 160px;
+  grid-gap: 8px;
+
+  @media (max-width: 1160px) {
+    grid-template-columns: 160px 168px auto 160px;
+  }
+
+  & > * {
+    width: 100%;
+  }
+
+  .select {
+
+    .select__value span {
+      margin-right: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .select__value span {
+    white-space: nowrap;
+  }
+}

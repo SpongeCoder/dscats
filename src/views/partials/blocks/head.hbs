@@ -1,0 +1,27 @@
+<header class="head {{modstyle}}">
+  <div class="main-wrapp head__wrapp">
+    <div class="head__wrapp">
+      {{> blocks/logo modStyle="head__logo"}}
+
+      <button type="button" class="head__burger btn btn--border btn--black btn--icon">
+        {{> svg-icon name="burger"}}
+      </button>
+
+      <button type="button" class="head__close btn btn--close">
+        {{> svg-icon name="close-icon"}}
+      </button>
+
+    </div>
+
+    <nav class="head__menu">
+      <a href="{{indexDir}}/pages/catalog.html" class="btn btn--clear">Каталог</a>
+      <a href="{{indexDir}}/pages/about.html" class="btn btn--clear">О нас</a>
+      <a href="{{indexDir}}/pages/contacts.html" class="btn btn--clear">Контакты</a>
+      <a href="{{indexDir}}/pages/magazine.html" class="btn btn--black btn--border">Журнал</a>
+      <a href="#login" class="head__login btn btn--icon btn--clear btn--hover-red">
+        {{> svg-icon name="lock-icon"}}
+        <span>Войти</span>
+      </a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,27 @@
+<div class="select {{modStyle}}">
+  <input type="hidden" name="select-name" value="">
+  <div class="select__value">
+    {{#if defaultName}}
+      <span>{{defaultName}}</span>
+    {{/if}}
+    {{#if iconName}}
+      {{> svg-icon name=iconName}}
+    {{else}}
+      {{> svg-icon name="select-triangle"}}
+    {{/if}}
+  </div>
+  <div class="select__list">
+    {{#if isPrice}}
+      <div class="select__price-input">
+        <input type="number" placeholder="от" min="1" max="999999" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+        <input type="number" placeholder="до" min="1" max="999999" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+      </div>
+    {{else}}
+      <ul>
+        {{#each listItem}}
+          <li data-val={{this}}>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+</div>

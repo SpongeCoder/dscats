@@ -1,0 +1,48 @@
+.room-card-description {
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $view-laptop) {
+    margin-bottom: 80px;
+    margin-top: 0;
+  }
+
+  &__desc {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    margin-top: 16px;
+    padding: 10px 12px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &__wrapper-btns {
+
+    .btn {
+      @media (max-width: $view-laptop) {
+        margin-bottom: 0;
+      }
+
+      &:not(:last-child) {
+
+        @media (max-width: $view-mobile) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

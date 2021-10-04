@@ -1,0 +1,79 @@
+.room-card-booking-rules {
+  margin-top: 104px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    margin-top: 64px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $view-laptop) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 58px;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1160px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      max-width: 680px;
+    }
+  }
+
+  &__item {
+    margin-top: 25px;
+    max-width: 176px;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1160px) {
+      flex: 0 0 50%;
+      margin-right: 32px;
+      max-width: 210px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: $view-tablet) {
+      margin-top: 30px;
+      margin-right: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    svg {
+      display: block;
+      height: 72px;
+      width: 72px;
+
+      @media (max-width: $view-tablet) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__desc {
+    margin-top: 17px;
+    display: block;
+
+    @media (max-width: $view-tablet) {
+      max-width: 220px;
+      margin: 0;
+    }
+  }
+}

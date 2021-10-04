@@ -1,0 +1,248 @@
+.magazine-page {
+  margin-bottom: 40px;
+  margin-top: 80px;
+
+  @media (max-width: $view-tablet) {
+    margin-top: 65px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+
+    @media (max-width: 1024px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $view-laptop) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $view-tablet) {
+      font-size: 32px;
+    }
+  }
+
+  .quote-block {
+    background-color: transparent;
+    padding: 0;
+    margin: 0 0 68px 0;
+
+    @media (max-width: 1024px) {
+      margin: 0 0 56px 0;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0 79px 0;
+    }
+
+    @media (max-width: $view-tablet) {
+      margin: 0 0 60px 0;
+    }
+  }
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .magazine-page-item {
+      &:nth-child(5),
+      &:nth-child(12),
+      &:nth-child(17),
+      &:nth-child(24),
+      &:nth-child(29),
+      &:nth-child(36),
+      &:nth-child(41),
+      &:nth-child(48),
+      &:nth-child(53),
+      &:nth-child(60),
+      &:nth-child(65),
+      &:nth-child(72),
+      &:nth-child(77),
+      &:nth-child(84)
+      {
+        width: 100%;
+        text-align: center;
+
+        @media (max-width: $view-tablet) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .select {
+      font-size: 14px;
+
+      .select__value {
+        padding-left: 0;
+      }
+    }
+  }
+
+}
+
+.magazine-page-item {
+  display: block;
+  width: 48.7%;
+  height: 340px;
+  color: $text-color-33;
+  border-radius: 24px;
+  border: solid 2px $primary-40;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  transition: 0.3s all ease;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    padding: 40px;
+    min-height: 310px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 252px;
+  }
+
+  @media (max-width: $view-tablet) {
+    width: 100%;
+  }
+
+  @media (max-width: $view-tablet) {
+    margin-bottom: 24px;
+  }
+
+  &--img {
+    color: $white;
+    border-width: 0;
+
+    .magazine-page-item__read .btn {
+      background-color: $white;
+      border-color: $white;
+      color: $text-color-33;
+    }
+
+    &:hover {
+      .magazine-page-item__title {
+        color: $white !important;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 64px;
+    text-decoration: none;
+
+    @media (max-width: 1024px) {
+      padding-top: 40px;
+    }
+
+    .magazine-page-item__title {
+      color: var(--color-primary);
+    }
+
+    .magazine-page-item__read {
+      opacity: 1;
+    }
+
+    .magazine-page-item__bg-img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: 0.3s all ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    position: relative;
+    transition: 0.3s all ease;
+    line-height: 1.31;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 1.42;
+      margin-bottom: 8px;
+    }
+
+  }
+
+  &__desc {
+    margin-bottom: 8px;
+    font-weight: bold;
+    position: relative;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__view-count {
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media (max-width: $view-laptop) {
+      margin-bottom: 20px;
+    }
+
+    svg {
+      opacity: 0.5;
+      width: 16px;
+      height: 16px;
+      margin-right: 7px;
+    }
+  }
+
+  &__read {
+    transition: 0.3s opacity ease;
+    opacity: 0;
+    position: relative;
+
+    @media (max-width: $view-laptop) {
+      opacity: 1;
+    }
+  }
+}

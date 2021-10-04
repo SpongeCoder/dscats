@@ -1,0 +1,85 @@
+<div class="card-product js-card-product {{modstyle}}">
+  <div class="card-product__wrapper">
+    <div class="card-product__images">
+      <img
+        class="js-interested-img active"
+        srcset="
+          {{indexDir}}/assets/img/content/photo2.jpg 1600w,
+          {{indexDir}}/assets/img/content/photo2-1200.jpg 1200w,
+          {{indexDir}}/assets/img/content/photo2-900.jpg 900w,
+          {{indexDir}}/assets/img/content/photo2-600.jpg 600w,
+        "
+        src="{{indexDir}}/assets/img/content/photo2.jpg"
+        data-img="1"
+        alt="product photo"
+      >
+      <img
+        class="js-interested-img"
+        srcset="
+          {{indexDir}}/assets/img/content/magazine-photo.jpg 1600w,
+          {{indexDir}}/assets/img/content/magazine-photo-1200.jpg 1200w,
+          {{indexDir}}/assets/img/content/magazine-photo-900.jpg 900w,
+          {{indexDir}}/assets/img/content/magazine-photo-600.jpg 600w,
+        "
+        src="{{indexDir}}/assets/img/content/magazine-photo.jpg"
+        data-img="2"
+        alt="product photo"
+      >
+      <img
+        class="js-interested-img"
+        srcset="
+          {{indexDir}}/assets/img/main/bg-feedback.jpg 1200w,
+          {{indexDir}}/assets/img/main/bg-feedback-900.jpg 900w,
+          {{indexDir}}/assets/img/main/bg-feedback-600.jpg 600w,
+        "
+        src="{{indexDir}}/assets/img/main/bg-feedback.jpg"
+        data-img="3"
+        alt="product photo"
+      >
+      <img
+        class="js-interested-img"
+        srcset="
+          {{indexDir}}/assets/img/content/photo.jpg 1600w,
+          {{indexDir}}/assets/img/content/photo-1200.jpg 1200w,
+          {{indexDir}}/assets/img/content/photo-900.jpg 900w,
+          {{indexDir}}/assets/img/content/photo-600.jpg 600w,
+        "
+        src="{{indexDir}}/assets/img/content/photo.jpg"
+        data-img="4"
+        alt="product photo"
+      >
+
+      <div class="card-product__box">
+        <div class="card-product__el js-card-product-el active" data-img-el="1"></div>
+        <div class="card-product__el js-card-product-el" data-img-el="2"></div>
+        <div class="card-product__el js-card-product-el" data-img-el="3"></div>
+        <div class="card-product__el js-card-product-el" data-img-el="4"></div>
+      </div>
+    </div>
+
+    <div class="card-product__container">
+      <h4 class="card-product__title">Заголовок</h4>
+      <div class="card-product__inner">
+        <div class="card-product__item">
+          {{> svg-icon name="cursor"}}
+          <span class="card-product__text">16см</span>
+        </div>
+        <div class="card-product__item">
+          {{> svg-icon name="plus-icon"}}
+          <span class="card-product__text">8 душ</span>
+        </div>
+        <div class="card-product__item">
+          {{> svg-icon name="stars-icon"}}
+          <span class="card-product__text">Станция</span>
+        </div>
+      </div>
+      <div class="card-product__btns">
+        <a href="javascript:void(0);" class="btn btn--primary">Оформить</a>
+        <button type="button" class="btn btn--black btn--border btn--icon">
+          {{> svg-icon name="like"}}
+        </button>
+      </div>
+    </div>
+    <span class="card-product__price">от 500р</span>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+{
+  "icons": [
+    "social-apple",
+    "social-facebook",
+    "social-google",
+    "social-instagram",
+    "social-vk",
+    "social-more",
+    "arrow-left",
+    "close-icon",
+    "lock-icon",
+    "minus-icon",
+    "plus-icon",
+    "stars-icon",
+    "stars-border-icon",
+    "like",
+    "burger",
+    "cursor",
+    "select-triangle",
+    "filter",
+    "rounded-icon",
+    "wi-fi",
+    "logo",
+    "eye-icon",
+    "placeholder",
+    "contract",
+    "003-sms"
+  ],
+  "filter": {
+    "cityList": [
+      "Москва",
+      "Питер",
+      "Новгород"
+    ],
+    "otherList": [
+      "Спорт",
+      "Ивенты",
+      "Музыка",
+      "Офисы Офисы"
+    ],
+    "sortList": [
+      "Сначала дешевле",
+      "Сначала дороже",
+      "По популярности",
+      "Скидки"
+    ]
+  }
+}

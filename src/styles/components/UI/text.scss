@@ -1,0 +1,88 @@
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.21;
+  margin-bottom: 16px;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+    line-height: 1.31;
+  }
+
+  @media (max-width: $view-laptop) {
+    font-size: 48px;
+    line-height: 1.21;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 32px;
+    line-height: 1.31;
+  }
+}
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 16px;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $view-laptop) {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 24px;
+    line-height: 1.42;
+  }
+}
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.63;
+  margin-bottom: 16px;
+}
+h6 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 14px;
+}
+
+b, bold {
+  font-weight: bold;
+}
+
+.gray-text {
+  color: $primary-60;
+  font-size: 14px;
+}
+.text-mini {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: normal;
+}
+.primary-color {
+  color: var(--color-primary);
+}

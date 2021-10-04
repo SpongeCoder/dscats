@@ -1,0 +1,19 @@
+.b-filter-close-btn {
+  display: none;
+  background-color: #fff;
+  position: relative;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background: #fff;
+
+  .btn {
+    border-color: $primary-black;
+    background-color: $primary-black;
+    margin-left: auto;
+    display: block;
+  }
+
+  @media (max-width: $view-laptop) {
+    display: block;
+  }
+}

@@ -1,0 +1,60 @@
+.room-slider-interested {
+  margin-top: 34px;
+  padding-bottom: 48px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    .swiper-wrapper {
+      display: block;
+    }
+
+    .swiper-slide {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .swiper-container-initialized {
+      height: 1830px;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .swiper-container-initialized {
+      height: 1450px;
+      overflow: hidden;
+    }
+  }
+
+  .card-product__images {
+    @media (max-width: 1024px) {
+      height: 273px;
+    }
+
+    @media (max-width: $view-laptop) {
+      height: 375px;
+    }
+
+    @media (max-width: $view-mobile) {
+      height: 240px;
+    }
+  }
+
+  .card-product__price {
+    @media (max-width: 1024px) {
+      top: 11px;
+    }
+
+    @media (max-width: $view-laptop) {
+      top: 22px;
+    }
+
+    @media (max-width: $view-mobile) {
+      top: 8px;
+      left: 8px;
+    }
+  }
+}

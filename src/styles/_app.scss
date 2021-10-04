@@ -1,0 +1,156 @@
+@import './fonts.scss';
+@import './components/UI/buttons.scss';
+@import './components/UI/text.scss';
+@import './components/UI/select.scss';
+@import './components/UI/inputs.scss';
+
+@import './components/blocks/logo.scss';
+@import './components/blocks/head.scss';
+@import './components/blocks/footer.scss';
+@import './components/blocks/popup.scss';
+
+@import './components/blocks/b-feedback.scss';
+@import './components/blocks/quote-block.scss';
+
+@import './components/blocks/b-filter/main.scss';
+
+@import './components/blocks/main-slider.scss';
+@import './components/blocks/main-steps.scss';
+@import './components/blocks/main-page-partners.scss';
+@import './components/blocks/catalog-type-list.scss';
+@import './components/blocks/b-search-link-image-map.scss';
+@import './components/blocks/b-subscribe.scss';
+@import './components/blocks/magazine-article-favorite.scss';
+
+@import './components/blocks/room-card/room-slider.scss';
+@import './components/blocks/room-card/room-slider-description.scss';
+@import './components/blocks/room-card/room-card-description.scss';
+@import './components/blocks/room-card/room-parking.scss';
+@import './components/blocks/room-card/room-slider-interested.scss';
+@import './components/blocks/room-card/room-card-prices.scss';
+@import './components/blocks/room-card/room-card-booking-rules.scss';
+@import './components/blocks/room-card/room-card-advantages.scss';
+@import './components/blocks/room-card/rating.scss';
+
+@import './components/blocks/card-product.scss';
+
+@import './components/page/404.scss';
+@import './components/page/contacts-page.scss';
+@import './components/page/about-page.scss';
+@import './components/page/magazine-page.scss';
+@import './components/page/article-page.scss';
+@import './components/page/main-page.scss';
+@import './components/page/room-card-page.scss';
+@import './components/page/catalog.scss';
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: $text-color-33;
+  line-height: 1.63;
+  font-size: 16px;
+
+  &.is-fullscreen {
+    overflow: hidden;
+  }
+}
+
+svg,
+use {
+  pointer-events: none;
+}
+
+input,
+button {
+  font-family: 'Rubik', sans-serif;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 10px;
+
+  li {
+    padding: 11px 0 11px 8px;
+    position: relative;
+    line-height: 1rem;
+
+    &::marker {
+      color: var(--color-primary);
+      font-size: 24px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.bgc-60 {
+  background-color: $primary-60;
+}
+
+.content {
+  background-color: #fff;
+  padding-top: $head-height;
+  margin-top: -$head-height;
+  flex: 1 0 auto;
+  overflow: hidden;
+
+  &--black {
+    background-color: $primary-black;
+    color: $white;
+  }
+
+  &--gray {
+    background-color: $primary-40;
+  }
+
+  &.is-scroll {
+    margin-top: 0;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-wrapp {
+  width: 100%;
+  padding: 0 48px;
+  max-width: 1312px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (max-width: $view-laptop) {
+    width: 100%;
+    padding: 0 48px;
+  }
+
+  @media (max-width: $view-tablet) {
+    padding: 0 24px;
+  }
+}
+
+.is-hide {
+  display: none;
+}
+
+.is-show {
+  display: block !important;
+}

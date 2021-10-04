@@ -1,0 +1,28 @@
+.b-filter-tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  & > * {
+    color: $white;
+    padding: 15px 16px 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgba($primary-black, 0.5);
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s all ease;
+
+    &.is-active {
+      background-color: $white;
+      color: $text-color-33;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: var(--color-primary);
+    }
+  }
+}

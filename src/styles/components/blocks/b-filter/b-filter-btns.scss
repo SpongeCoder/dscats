@@ -1,0 +1,15 @@
+.b-filter-btns {
+  position: absolute;
+  right: 16px;
+  bottom: -34px;
+
+  & > * {
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: $view-tablet) {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+}

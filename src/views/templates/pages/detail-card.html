@@ -1,0 +1,163 @@
+{{> header title="Детальная страница"}}
+{{> blocks/head modstyle='head--white'}}
+<div class="content room-card">
+  <div class="room-card__mobile-img js-room-card-mobile-img">
+    <img
+      srcset="
+        {{indexDir}}/assets/img/main/bg-feedback.jpg 1200w,
+        {{indexDir}}/assets/img/main/bg-feedback-900.jpg 900w,
+        {{indexDir}}/assets/img/main/bg-feedback-600.jpg 600w,
+      "
+      src="{{indexDir}}/assets/img/main/bg-feedback.jpg"
+      alt="photo"
+    >
+  </div>
+  <div class="room-slider room-card__slider js-room-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide room-slider__item">
+        <img
+          srcset="
+            {{indexDir}}/assets/img/content/photo.jpg 1600w,
+            {{indexDir}}/assets/img/content/photo-1200.jpg 1200w,
+            {{indexDir}}/assets/img/content/photo-900.jpg 900w,
+            {{indexDir}}/assets/img/content/photo-600.jpg 600w,
+          "
+          src="{{indexDir}}/assets/img/content/photo.jpg"
+          alt="title"
+        >
+      </div>
+      <div class="swiper-slide room-slider__item">
+        <img
+          srcset="
+            {{indexDir}}/assets/img/content/photo2.jpg 1600w,
+            {{indexDir}}/assets/img/content/photo2-1200.jpg 1200w,
+            {{indexDir}}/assets/img/content/photo2-900.jpg 900w,
+            {{indexDir}}/assets/img/content/photo2-600.jpg 600w,
+          "
+          src="{{indexDir}}/assets/img/content/photo2.jpg"
+          alt="title"
+        >
+      </div>
+      <div class="swiper-slide room-slider__item">
+        <img
+          srcset="
+            {{indexDir}}/assets/img/content/contacts-1.jpg 1200w,
+            {{indexDir}}/assets/img/content/contacts-1-900.jpg 900w,
+            {{indexDir}}/assets/img/content/contacts-1-600.jpg 600w,
+          "
+          src="{{indexDir}}/assets/img/content/contacts-1.jpg"
+          alt="contacts"
+        >
+      </div>
+      <div class="swiper-slide room-slider__item">
+        <img
+          srcset="
+            {{indexDir}}/assets/img/content/magazine-photo.jpg 1600w,
+            {{indexDir}}/assets/img/content/magazine-photo-1200.jpg 1200w,
+            {{indexDir}}/assets/img/content/magazine-photo-900.jpg 900w,
+            {{indexDir}}/assets/img/content/magazine-photo-600.jpg 600w,
+          "
+          src="{{indexDir}}/assets/img/content/magazine-photo.jpg"
+          alt="title"
+        >
+      </div>
+    </div>
+    <div class="main-wrapp room-slider__footer">
+      <div class="room-slider__footer-container">
+        <button class="btn btn--close js-onexitfullscreen-gallery room-slider__btn-close">
+          {{> svg-icon name="close-icon"}}
+        </button>
+
+        <div class="room-slider-desc">
+          <div class="room-slider-desc__title">Заголовок товара</div>
+          <div class="room-slider-desc__btns">
+            <div class="room-slider-desc__price">от 500р</div>
+            <button type="button" class="btn btn--primary">Оформить</button>
+            <button type="button" class="btn btn--black btn--icon">
+              {{> svg-icon name="like"}}
+            </button>
+          </div>
+        </div>
+
+        <div class="room-slider__footer-btns">
+          <button type="button" class="btn btn--white room-slider__btn js-onfullscreen-gallery">Полноэкранный режим</button>
+          <span class="btn btn--white btn--clear room-slider__btn--clear">4 фото</span>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <div class="main-wrapp room-card__main-wrapp">
+    <div class="room-card__container">
+      <div class="room-card__desc-scroll"></div>
+      <div class="room-card-description ">
+        <h3>Описание</h3>
+        <p class="room-card-description__desc">Курс на социально-ориентированный национальный проект даёт нам право принимать самостоятельные решения.</p>
+
+        <div class="room-card-description__wrapper-btns">
+          <button type="button" class="btn btn--icon room-card-description__btn">
+            {{> svg-icon name="wi-fi"}}
+            <span>Доступ в интернет</span>
+          </button>
+          <button type="button" class="btn btn--icon room-card-description__btn">
+            {{> svg-icon name="wi-fi"}}
+            <span>Доступ в интернет</span>
+          </button>
+          <button type="button" class="btn btn--icon room-card-description__btn">
+            {{> svg-icon name="wi-fi"}}
+            <span>Доступ в интернет</span>
+          </button>
+        </div>
+        <div>
+          <button type="button" class="btn btn--100 btn--icon room-card-description__btn">
+            {{> svg-icon name="plus-icon"}}
+            <span>Свойство 1</span>
+          </button>
+          <button type="button" class="btn btn--100 btn--icon room-card-description__btn">
+            {{> svg-icon name="cursor"}}
+            <span>Свойство 2</span>
+          </button>
+        </div>
+      </div>
+      <div class="room-card__how-get">
+        <h3>Как оценить</h3>
+        <p>Равным образом, перспективное планирование позволяет оценить значение инновационных методов управления процессами.</p>
+        <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+        <p>Следует отметить, что семантический разбор внешних противодействий играет важную роль в формировании дальнейших направлений развития.</p>
+      </div>
+      <div class="room-parking">
+        <h3 class="room-parking__title">Заголовок описания</h3>
+        <div class="room-parking__wrapper">
+          <div class="room-parking__icon">
+            {{> svg-icon name="placeholder"}}
+          </div>
+          <div>
+            <h5 class="room-parking__name">Смешно, но склады ломятся от зерна</h5>
+            <p class="room-parking__desc">А также акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+            <p class="room-parking__desc">Не следует, однако, забывать, что базовый вектор развития не даёт нам иного выбора, кроме определения стандартных подходов.</p>
+            <p class="room-parking__desc">Следует отметить, что курс на социально-ориентированный национальный проект однозначно определяет каждого участника как способного принимать собственные решения касаемо экономической целесообразности принимаемых решений.</p>
+          </div>
+        </div>
+        <div class="room-parking__wrapper">
+          <div class="room-parking__icon">
+            {{> svg-icon name="placeholder"}}
+          </div>
+          <div>
+            <h5 class="room-parking__name">Цена вопроса не важна</h5>
+            <p class="room-parking__desc">Базовые сценарии поведения пользователей призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно.</p>
+            <p class="room-parking__desc">Сознание наших соотечественников не замутнено пропагандой</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> blocks/room-slider-description }}
+  </div>
+
+  <div class="main-wrapp">
+    <h3>Возможно вас заинтересует</h3>
+  </div>
+  {{> blocks/room-slider-interested }}
+
+  {{> blocks/b-feedback modStyle="b-feedback--dark room-card__form"}}
+</div>
+{{> footer }}

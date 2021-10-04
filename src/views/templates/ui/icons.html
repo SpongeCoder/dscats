@@ -1,0 +1,44 @@
+{{> header title="Иконки"}}
+{{> blocks/head }}
+<div class="content">
+  <div class="main-wrapp">
+    <h1>Иконки</h1>
+
+    <style>
+      .dev-view-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 15px 0;
+      }
+      .dev-view-icon div {
+        max-width: 140px;
+        margin-right: 20px;
+      }
+      .dev-view-icon svg {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .dev-view-icon span {
+        display: block;
+        background-color: #3c4959;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+      }
+    </style>
+
+    <div class="dev-view-icon">
+      {{#each ui.icons}}
+        <div title={{this}}>
+          {{> svg-icon name=. }}
+          <span>{{@index}}: {{this}}</span>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>
+</div>
+{{> footer }}

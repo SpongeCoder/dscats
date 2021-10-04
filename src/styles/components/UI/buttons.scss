@@ -1,0 +1,271 @@
+.btn {
+  padding: 14px 26px 13px;
+  border-radius: 8px;
+  border: solid 2px $primary-60;
+  background-color: $white;
+  color: $text-color-33;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  vertical-align: middle;
+  text-decoration: none !important;
+  line-height: 1.23;
+  display: inline-block;
+  transition: 0.2s border ease-in, 0.2s background ease-in, 0.2s color ease-in;
+
+  svg {
+    width: 16px;
+    height: 17px;
+    display: block;
+    flex: 0 0 auto;
+    margin: 0 auto;
+    transition: 0.2s transform ease-in;
+  }
+
+  &:disabled {
+    color: rgba($text-color-33, 0.25) !important;
+    background-color: $primary-40 !important;
+    border-color: $primary-40 !important;
+  }
+
+  &--primary {
+    border-color: var(--color-primary);
+    color: $white;
+    background-color: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    padding: 16px 28px 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateX(-100%);
+      transition: 0.2s transform ease-in;
+    }
+
+    &.btn--icon {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &:hover {
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &--red {
+    border-color: $primary-red;
+    color: $white;
+    background-color: $primary-red;
+
+    &:hover {
+      background-color: mix(white, $primary-red, 15%);
+      border-color: mix(white, $primary-red, 15%);
+    }
+  }
+
+  &--black {
+    border-color: $primary-black;
+    color: $white;
+    background-color: $primary-black;
+
+    &:hover {
+      background-color: mix(white, $primary-black, 15%);
+      border-color: mix(white, $primary-black, 15%);
+    }
+  }
+
+  &--100 {
+    border-color: $primary-100;
+    color: $white;
+    background-color: $primary-100;
+
+    &:hover {
+      background-color: mix(white, $primary-100, 15%);
+      border-color: mix(white, $primary-100, 15%);
+    }
+  }
+
+  &--40 {
+    border-color: $primary-40;
+    color: $primary-black;
+    background-color: $primary-40;
+
+    &:hover {
+      background-color: mix(white, $primary-40, 35%);
+      border-color: mix(white, $primary-40, 35%);
+    }
+  }
+
+  &--white {
+    border-color: $white;
+    background-color: $white;
+    color: $text-color-33;
+
+    &:hover {
+      background-color: #f4f5f5;
+      border-color: #f4f5f5;
+    }
+  }
+
+  &--border {
+    border-width: 2px;
+    background-color: transparent;
+    padding: 14px 26px 13px;
+
+    &.btn--black {
+      color: $text-color-33;
+
+      &:hover {
+        color: $white;
+        background-color: $primary-black;
+        border-color: $primary-black;
+      }
+    }
+
+    &.btn--white {
+      color: $white;
+
+      &:hover {
+        color: $text-color-33;
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+
+  &--clear {
+    background-color: transparent;
+    border-color: transparent;
+    // color: $white;
+
+    &:hover {
+      text-decoration: underline !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
+
+    &.btn--white {
+      color: $white;
+    }
+  }
+
+  &--icon {
+    padding-right: 14px;
+    padding-left: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    & > span {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  &--shadow {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &--hover-red {
+    &:hover {
+      color: $primary-red;
+    }
+  }
+  &--hover-white {
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &--hover-bg-white {
+    &:hover {
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+  &--hover-bg-red {
+    &:hover {
+      background-color: $primary-red;
+      border-color: $primary-red;
+    }
+  }
+
+  &--social {
+    padding: 11px;
+    border-radius: 8px;
+    background-color: $primary-40;
+    border-color: $primary-40;
+    color: $primary-80;
+    max-width: 48px;
+    max-height: 48px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &--apple {
+    &:hover {
+      background-color: $social-color-apple;
+      border-color: $social-color-apple;
+      color: $white;
+    }
+
+    svg {
+      position: relative;
+      left: -1px;
+    }
+  }
+  &--google {
+    &:hover {
+      background-color: $social-color-google;
+      border-color: $social-color-google;
+      color: $white;
+    }
+  }
+  &--vk {
+    &:hover {
+      background-color: $social-color-vk;
+      border-color: $social-color-vk;
+      color: $white;
+    }
+  }
+  &--more {
+    &:hover {
+      color: $primary-red;
+    }
+  }
+
+  &--close {
+    border-radius: 8px;
+    background-color: $primary-100;
+    border-color: $primary-100;
+    padding: 16px;
+    width: 48px;
+    height: 48px;
+    color: $white;
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    &:hover {
+      background-color: $primary-black;
+      border-color: $primary-black;
+
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

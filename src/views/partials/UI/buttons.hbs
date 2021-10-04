@@ -1,0 +1,81 @@
+<div>
+  <h3>Buttons</h3>
+  <div style="margin: 20px 0">
+    <button type="button" class="btn">Кнопка</button>
+    <button type="button" class="btn btn--icon">
+      {{> svg-icon name="like"}}
+    </button>
+  </div>
+  <div style="margin: 20px 0">
+    <button type="button" class="btn btn--primary">Кнопка</button>
+    <button type="button" class="btn btn--primary btn--icon">
+      {{> svg-icon name="like"}}
+    </button>
+  </div>
+  <div style="margin: 20px 0">
+    <button type="button" class="btn btn--black">Кнопка</button>
+    <button type="button" class="btn btn--black btn--icon">
+      {{> svg-icon name="like"}}
+    </button>
+  </div>
+  <div style="margin: 20px 0">
+    <button type="button" class="btn btn--100">Кнопка</button>
+    <button type="button" class="btn btn--100 btn--icon">
+      {{> svg-icon name="like"}}
+    </button>
+  </div>
+  <div style="margin: 20px 0">
+    <button type="button" class="btn btn--100" disabled>Кнопка</button>
+    <button type="button" class="btn btn--100 btn--icon" disabled>
+      {{> svg-icon name="like"}}
+    </button>
+  </div>
+  <div style="margin: 20px 0">
+    <button type="button" class="btn btn--black btn--border">Кнопка</button>
+    <button type="button" class="btn btn--black btn--border btn--icon">
+      {{> svg-icon name="like"}}
+    </button>
+  </div>
+
+  <div style="margin: 20px 0">
+    <a href="/" class="btn btn--black btn--border">Кнопка ссылкой</a>
+    <a href="/" class="btn btn--black btn--border btn--icon">
+      {{> svg-icon name="like"}}
+    </a>
+  </div>
+
+  <div style="margin: 20px 0">
+    <button class="btn btn--close">
+      {{> svg-icon name="close-icon"}}
+    </button>
+  </div>
+</div>
+
+<div style="margin: 20px 0">
+  {{> blocks/buttons-social }}
+</div>
+
+<div class="bgc-60" style="padding: 50px 20px;">
+  <button type="button" class="btn btn--white btn--border">Кнопка</button>
+  <button type="button" class="btn btn--white">Кнопка</button>
+  <button type="button" class="btn btn--white btn--hover-bg-red btn--hover-white btn--icon">
+    {{> svg-icon name="burger"}}
+  </button>
+  <button type="button" class="btn btn--white btn--hover-bg-white btn--hover-red btn--icon">
+    {{> svg-icon name="cursor"}}
+  </button>
+
+  <button type="button" class="btn btn--white btn--hover-bg-white btn--hover-red btn--icon">
+    {{> svg-icon name="cursor"}}
+    <span>Иконка с текстом</span>
+  </button>
+
+  <button type="button" class="btn btn--white btn--hover-bg-white btn--hover-red btn--icon btn--shadow">
+    {{> svg-icon name="cursor"}}
+    <span>Кнопка с тенью</span>
+  </button>
+
+  <button type="button" class="btn btn--clear">Оставить заявку</button>
+
+  <button type="button" class="btn btn--white btn--clear">Оставить заявку</button>
+</div>

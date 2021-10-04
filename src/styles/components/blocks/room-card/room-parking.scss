@@ -1,0 +1,49 @@
+.room-parking {
+  margin-top: 120px;
+  margin-bottom: 105px;
+
+  @media (max-width: 1024px) {
+    margin-top: 80px;
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    margin-bottom: 31px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 12px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+  }
+}

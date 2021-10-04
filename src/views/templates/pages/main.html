@@ -1,0 +1,121 @@
+{{> header title="Главная"}}
+{{> blocks/head modstyle='head--white'}}
+<div class="content">
+
+  <div class="main-page">
+    <div class="main-page__head">
+      <div class="main-slider">
+        <div class="main-slider__content">
+          <div class="main-slider__item is-active">
+            <img
+              srcset="
+                {{indexDir}}/assets/img/content/magazine-photo.jpg 1600w,
+                {{indexDir}}/assets/img/content/magazine-photo-1200.jpg 1200w,
+                {{indexDir}}/assets/img/content/magazine-photo-900.jpg 900w,
+                {{indexDir}}/assets/img/content/magazine-photo-600.jpg 600w,
+              "
+              src="{{indexDir}}/assets/img/content/magazine-photo.jpg"
+              alt="title"
+            >
+          </div>
+          <div class="main-slider__item">
+            <img
+              srcset="
+                {{indexDir}}/assets/img/content/photo.jpg 1600w,
+                {{indexDir}}/assets/img/content/photo-1200.jpg 1200w,
+                {{indexDir}}/assets/img/content/photo-900.jpg 900w,
+                {{indexDir}}/assets/img/content/photo-600.jpg 600w,
+              "
+              src="{{indexDir}}/assets/img/content/photo.jpg"
+              alt="title"
+            >
+          </div>
+          <div class="main-slider__item">
+            <img
+              srcset="
+                {{indexDir}}/assets/img/content/photo2.jpg 1600w,
+                {{indexDir}}/assets/img/content/photo2-1200.jpg 1200w,
+                {{indexDir}}/assets/img/content/photo2-900.jpg 900w,
+                {{indexDir}}/assets/img/content/photo2-600.jpg 600w,
+              "
+              src="{{indexDir}}/assets/img/content/photo2.jpg"
+              alt="title"
+            >
+          </div>
+          <div class="main-slider__item">
+            <img
+              srcset="
+                {{indexDir}}/assets/img/main/bg-feedback.jpg 1200w,
+                {{indexDir}}/assets/img/main/bg-feedback-900.jpg 900w,
+                {{indexDir}}/assets/img/main/bg-feedback-600.jpg 600w,
+              "
+              src="{{indexDir}}/assets/img/main/bg-feedback.jpg"
+              alt="photo"
+            >
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapp">
+        <div class="main-page__header">
+          <h1>Привет Мир!</h1>
+          {{> blocks/b-filter modStyle="b-filter--main" isMainPage="1"}}
+
+          <div class="main-slider-dots">
+            <button type="button" class="is-active"></button>
+            <button type="button"></button>
+            <button type="button"></button>
+            <button type="button"></button>
+          </div>
+
+          <div class="main-steps">
+            <div class="main-steps-item is-active">
+              <div class="main-steps-item__img">
+                {{> svg-icon name="contract"}}
+              </div>
+              <div class="main-steps-item__info">
+                <b>Выбор значения</b>
+                <div>Выберите значение и тип. При необходимости воспользуйтесь поиском по карте.</div>
+              </div>
+            </div>
+
+            <div class="main-steps-item">
+              <div class="main-steps-item__img">
+                {{> svg-icon name="contract"}}
+              </div>
+              <div class="main-steps-item__info">
+                <b>Выбор значения</b>
+                <div>Выбранное можно оплатить онлайн. Либо по телефону с оплатой на месте.</div>
+              </div>
+            </div>
+
+            <div class="main-steps-item">
+              <div class="main-steps-item__img">
+                {{> svg-icon name="contract"}}
+              </div>
+              <div class="main-steps-item__info">
+                <b>Выбор значения</b>
+                <div>После оплаты картой на нашем сайте вам придет уведомление с подтверждением.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrapp">
+      {{> blocks/catalog-type-list }}
+    </div>
+
+    {{> blocks/b-search-link-image-map }}
+
+    <div class="main-wrapp">
+      {{> blocks/main-page__partners-info}}
+
+      {{> blocks/magazine-article-favorite}}
+    </div>
+
+    {{> blocks/b-subscribe }}
+  </div>
+
+</div>
+{{> footer }}

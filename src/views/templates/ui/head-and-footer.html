@@ -1,0 +1,24 @@
+{{> header title="Фильтр, формы с вопросом, авториз. шапка и прочие блоки"}}
+{{> blocks/head auth=1}}
+<div class="content">
+  <div class="main-wrapp bgc-60" style="padding-top: 20px; padding-bottom: 20px;">
+    <h4>Фильтр</h4>
+    {{> blocks/b-filter}}
+  </div>
+
+  <div class="main-wrapp bgc-60" style="padding-top: 20px; padding-bottom: 20px;">
+    <h4>Фильтр на главной</h4>
+    {{> blocks/b-filter modStyle="b-filter--main" isMainPage="1"}}
+  </div>
+
+  <div style="margin: 20px 0;">
+    {{> blocks/b-feedback}}
+  </div>
+
+  <div style="margin: 20px 0;">
+    <div class="main-wrapp text-mini">В моб. разрешении - текст по центру:</div>
+    {{> blocks/b-feedback modStyle="b-feedback--center-mobile"}}
+  </div>
+
+</div>
+{{> footer }}
